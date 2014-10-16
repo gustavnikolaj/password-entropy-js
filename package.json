@@ -1,0 +1,18 @@
+{
+  "name": "password-entropy",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustav Nikolaj Olsen <gno@one.com>",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "mocha": "1.21.5",
+    "unexpected": "5.0.0-beta9"
+  }
+}
