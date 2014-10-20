@@ -1,6 +1,6 @@
 {
   "name": "password-entropy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "./lib/password-entropy.js",
   "directories": {
