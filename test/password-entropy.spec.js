@@ -37,7 +37,8 @@ describe('password-entropy', function () {
         [
             'ChaG4que',
             'ChaG4qu4que',
-            'ChaGfque!'
+            'ChaGfque!',
+            'aaaaaaaaaaaaaaaaa'
         ].forEach(function (password) {
             it(password, function () {
                 expect(password, 'to have entropy greater than', 3.5);
@@ -48,6 +49,7 @@ describe('password-entropy', function () {
 
     describe('strong passwords', function () {
         [
+            'aaaaaaaaaaaaaaaaaa',
             'ChaG4que!ø',
             'det her er et godt password',
             '1111111111111111111111111111111111111111',
