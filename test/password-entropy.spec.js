@@ -21,20 +21,26 @@ describe('password-entropy', function () {
 
     describe('simple passwords', function () {
         [
-            'password'
+            '',
+            '1',
+            '123456',
+            'password',
+            'Password'
         ].forEach(function (password) {
             it(password, function () {
-                expect(password, 'to have entropy less than', 2.5);
+                expect(password, 'to have entropy less than', 3.5);
             });
         });
     });
 
     describe('medium passwords', function () {
         [
-            'det her er et godt password'
+            'ChaG4que',
+            'ChaG4qu4que',
+            'ChaGfque!'
         ].forEach(function (password) {
             it(password, function () {
-                expect(password, 'to have entropy greater than', 2.5);
+                expect(password, 'to have entropy greater than', 3.5);
                 expect(password, 'to have entropy less than', 7.5);
             });
         });
@@ -42,6 +48,9 @@ describe('password-entropy', function () {
 
     describe('strong passwords', function () {
         [
+            'ChaG4que!ø',
+            'det her er et godt password',
+            '1111111111111111111111111111111111111111',
             'xoad4zei8eahahl8Chaelehahvee0oD4Oopheiji9congeeBuNoo8pheevei5fah'
         ].forEach(function (password) {
             it(password, function () {
