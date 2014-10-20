@@ -2,12 +2,12 @@
   "name": "password-entropy",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/password-entropy.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Gustav Nikolaj Olsen <gno@one.com>",
   "license": "BSD-3-Clause",
